@@ -141,6 +141,10 @@ make demo clear=true
 | spec.volume.requests.storage | 存储大小 | 1Gi |
 | spec.volume.storageClass | 存储类 | default |
 | spec.config | 其他自定义配置，自动映射到custom.propretise | 格式和configmap兼容 |
+| spec.certification.enabled | 支持认证授权 true false 对应 NACOS_AUTH_ENABLE| 默认 false |
+| spec.certification.token | 认证授权的token， base64 对应 NACOS_AUTH_TOKEN | 无 |
+| spec.certification.cache_enabled | 认证token 缓存是否开启 true false 对应 NACOS_AUTH_TOKEN_EXPIRE_SECONDS| 默认 5 |
+| spec.certification.token_expire_seconds | 缓存过期时间 对应 NACOS_AUTH_CACHE_ENABLE | 默认 false |
 | spec.k8sWrapper | 支持通用k8配置，即PodSpec对象，会自动覆盖所有内部pod对象 | 无 |
 
 更多配置案例见./config/samples
