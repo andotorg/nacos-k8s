@@ -140,7 +140,7 @@ make demo clear=true
 | spec.volume.enabled | 是否开启数据卷 | true，如果数据库类型是embedded，请开启数据卷，否则重启pod数据丢失 |
 | spec.volume.requests.storage | 存储大小 | 1Gi |
 | spec.volume.storageClass | 存储类 | default |
-| spec.config | 其他自定义配置，自动映射到custom.propretise | 格式和configmap兼容 |
+| ~~spec.config~~ | ~~其他自定义配置，自动映射到custom.propretise~~ | ~~格式和configmap兼容~~ |
 | spec.certification.enabled | 支持认证授权 true false 对应 NACOS_AUTH_ENABLE| 默认 false |
 | spec.certification.token | 认证授权的token， base64 对应 NACOS_AUTH_TOKEN | 无 |
 | spec.certification.cache_enabled | 认证token 缓存是否开启 true false 对应 NACOS_AUTH_TOKEN_EXPIRE_SECONDS| 默认 5 |
