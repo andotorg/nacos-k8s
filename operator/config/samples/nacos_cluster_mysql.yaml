@@ -24,3 +24,9 @@ spec:
     mysqlPassword: "eGSZUDBaa3"
   config: |
     management.endpoints.web.exposure.include=*
+  # 开启授权 NACOS_AUTH_ENABLE=true
+  certification:
+    enabled: true
+    token: 
+    token_expire_seconds: 18000
+    cache_enabled: true
